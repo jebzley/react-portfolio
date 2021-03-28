@@ -2,7 +2,6 @@ import React from "react";
 import StackIcon from "./StackIcon";
 import styles from "./StackDisplay.module.scss";
 
-import { Icon, InlineIcon } from "@iconify/react";
 import githubactionsIcon from "@iconify/icons-simple-icons/githubactions";
 import html5Icon from "@iconify/icons-simple-icons/html5";
 import css3Icon from "@iconify/icons-simple-icons/css3";

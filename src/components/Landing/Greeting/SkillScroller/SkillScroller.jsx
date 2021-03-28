@@ -39,7 +39,6 @@ const SkillScroller = () => {
             ? rolesToDisplay[0]
             : rolesToDisplay[roleCount + 1]}
         </h1>
-        
       </div>
     </div>
   );

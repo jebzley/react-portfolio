@@ -1,0 +1,57 @@
+@import "../../../assets/styles/styles.scss";
+
+.contactLink{
+  position: relative;
+  width: 300px;
+  display: grid;
+  grid-template-columns: 40px 42px auto 1fr;
+
+  .contactIcon{
+    grid-column: 1;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    
+  }
+  .prefixWrapper{
+    height: 100%;
+    grid-column: 2;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  .prefix{
+    height: 40px;
+    text-align: right;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    width: 0;
+    transition: 0.5s ease;
+  }
+  .linkName{
+    display: flex;
+    align-items: center;
+  }
+  .suffix{
+    height: 40px;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 0;
+    transition: 1s ease;
+  }
+  &:hover{
+    .prefix{
+      width: 100%;
+    }
+    .suffix{
+      overflow: hidden;
+      width: 100%;
+    }
+
+  }
+}
+

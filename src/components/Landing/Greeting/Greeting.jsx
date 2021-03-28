@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./Greeting.module.scss";
-import SkillScroller from "../SkillScroller";
+import SkillScroller from "./SkillScroller";
 
 const Greeting = () => {
   return (

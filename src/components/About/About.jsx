@@ -5,8 +5,8 @@ import AboutLinks from "./AboutLinks";
 
 const About = () => {
   return (
-    <div className={styles.about}>
-      <main className={styles.aboutContent}>
+    <section className={styles.about}>
+      <div className={styles.aboutContent}>
         <div className={styles.imageAndLinks}>
           <div className={styles.imageOfMe}></div>
           <AboutLinks />
@@ -22,12 +22,12 @@ const About = () => {
             blooper MF DOOM, he's like D.B. Cooper.
           </p>
         </div>
-      </main>
+      </div>
       <div className={styles.stack}>
       <h3>My toolset</h3>
       <StackDisplay />
       </div>
-    </div>
+    </section>
   );
 };
 

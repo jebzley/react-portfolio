@@ -16,7 +16,9 @@ const Navigation = () => {
       <Link to="/about">
         <SmileyMeh size={iconSize} />
       </Link>
-      <Book size={iconSize} />
+      <Link to="/contact">
+        <Book size={iconSize} />
+      </Link>
     </nav>
   );
 };

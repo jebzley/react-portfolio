@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./Work.module.scss";
 const Work = () => {
   return (
-    <div className={styles.work}>
+    <section className={styles.work}>
       <div className={styles.jobColumn1}>
         <div className={styles.job}>
           <h3>knoWaste</h3>
@@ -26,7 +26,7 @@ const Work = () => {
           <h3>Morse Translator</h3>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
