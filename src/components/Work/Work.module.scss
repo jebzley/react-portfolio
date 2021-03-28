@@ -1,0 +1,41 @@
+.work {
+  height: 100%;
+  width: 80%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1%;
+  padding: 5%;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.jobColumn1, .jobColumn2{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+
+.job{
+  width: 100%;
+  height: 100%;
+  padding: 10%;
+  margin: 1%;
+  background-color: lightgray;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s ease;
+  p{
+    font-size: 0;
+    transition: 0.5s ease;
+  }
+  &:hover{
+    height: 200%;
+    p{
+      font-size: 1rem;
+    }
+  }
+}

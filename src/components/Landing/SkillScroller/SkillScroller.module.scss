@@ -1,0 +1,18 @@
+@import "../../../assets/styles/styles.scss";
+.skillScroller {
+  h1 {
+    font-weight: 400;
+  }
+
+  .slideIn {
+    height: 40px;
+    overflow: hidden;
+  }
+  .slideItem {
+    animation: slide-in 4s infinite;
+    transform: translateY(-38px);
+  }
+  .slideItemStopped {
+    transform: translateY(-38px);
+  }
+}

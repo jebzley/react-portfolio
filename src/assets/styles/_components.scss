@@ -1,0 +1,13 @@
+button {
+  outline: none;
+  font-family: $standard-font-family;
+  width: 10rem;
+  height: 3rem;
+  border: 2px solid black;
+  border-radius: 16px;
+  box-shadow: 0px 3px 0px 0px black;
+  &:active {
+    transform: translateY(2px);
+    box-shadow: 0px 0px 0px 0px black;
+  }
+}

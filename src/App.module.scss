@@ -1,0 +1,15 @@
+@import "./assets/styles/styles";
+
+.App{
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  grid-template-rows: 55px auto;
+}
+
+.topBarWrapper {
+  grid-row: 1;
+}
+.contentWrapper{
+  grid-row: 2;
+}

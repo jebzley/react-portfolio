@@ -1,0 +1,26 @@
+@import "../../assets/styles/styles.scss";
+
+.topBar{
+  width: 100%;
+  height: 55px;
+  top: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.navigation{
+  grid-column: 1;
+  display: flex;
+  justify-content: center;
+}
+.ticker{
+  grid-column: 3;
+  display: flex;
+  justify-content: center;
+}
+.bottomBorder{
+  grid-column: 1/-1;
+  width: 80%;
+  bottom: 0;
+  border-bottom: 2px solid black;
+  margin: auto;
+}

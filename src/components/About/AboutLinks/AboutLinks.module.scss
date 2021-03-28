@@ -1,0 +1,27 @@
+@import "../../../assets/styles/styles.scss";
+.aboutLinks {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.linkAndTag {
+  *{
+    margin: 0;
+  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  p{
+    writing-mode: vertical-lr;
+    padding-top: 10px;
+    opacity: 0;
+    transition: 0.5s ease;
+    line-height: 0;
+  }
+  &:hover{
+    p{
+      opacity: 1;
+    }
+  }
+}
