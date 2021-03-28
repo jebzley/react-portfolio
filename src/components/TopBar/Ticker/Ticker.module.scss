@@ -11,7 +11,11 @@
     padding: auto;
   }
 }
-
+.tickerLeft{
+  font-weight: bold;
+}
 .tickerItem{
+  width: 100%;
+  text-align: left;
   overflow: hidden;
 }

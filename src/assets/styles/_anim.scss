@@ -4,3 +4,8 @@
   60%  {transform: translateY(-38px);}
   100% {transform: translateY(-38px);}
 }
+
+@keyframes text-scroll {
+  0%   {transform: translateX(-100%);}
+  100% {transform: translateX(100%);}
+}
