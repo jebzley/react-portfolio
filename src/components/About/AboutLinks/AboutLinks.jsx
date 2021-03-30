@@ -5,21 +5,22 @@ const AboutLinks = () => {
   const iconSize = 32;
   return (
     <div className={styles.aboutLinks}>
-      <div className={styles.linkAndTag}>
-        <GithubLogo size={iconSize} />
-        <p>github</p>
-      </div>
-      <div className={styles.linkAndTag}>
+        <a href="https://github.com/jebzley" target="_blank" rel="noopener noreferrer" className={styles.linkAndTag}>
+          <GithubLogo size={iconSize} />
+          <p>github</p>
+        </a>
+        <a href="https://www.linkedin.com/in/sebleedev" target="_blank" rel="noopener noreferrer" className={styles.linkAndTag}>
         <LinkedinLogo size={iconSize} />
         <p>linkedin</p>
-      </div>
-      <div className={styles.linkAndTag}>
-      <Article size={iconSize} />
-      <p>resume</p>
-      </div>
-      <div className={styles.linkAndTag}><Faders size={iconSize} /><p>music</p></div>
-      
-      
+      </a>
+      <a href="https://github.com/jebzley" target="_blank" rel="noopener noreferrer" className={styles.linkAndTag}>
+        <Article size={iconSize} />
+        <p>resume</p>
+      </a>
+      <a href="https://cuiet.bandcamp.com" target="_blank" rel="noopener noreferrer" className={styles.linkAndTag}>
+        <Faders size={iconSize} />
+        <p>music</p>
+      </a>
     </div>
   );
 };

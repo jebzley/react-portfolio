@@ -4,4 +4,5 @@ export const currentlyPlaying = async () => {
   );
   const jsonResponse = await apiResponse.json();
   console.log(apiResponse)
+  console.log(jsonResponse)
 };

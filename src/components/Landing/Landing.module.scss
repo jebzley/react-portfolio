@@ -9,10 +9,14 @@
   align-items: center;
 }
 
-.enterButton{
-  margin: 40px;
-}
 
 .fadeOut{
   animation: slide-in 5s;
+}
+
+.enterButton{
+  transition: background-color 0.5s ease;
+  &:hover{
+    background-color: rgb(214, 146, 57);
+  }
 }

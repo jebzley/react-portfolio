@@ -20,8 +20,16 @@ const SkillScroller = () => {
 
   useEffect(() => {
     const skillTicker = setInterval(roleCountUpdater, 2000);
-    return () => clearInterval(skillTicker);
+    return () => {
+      clearInterval(skillTicker);
+    }
   }, [roleCount]);
+
+  useEffect(() => {
+    return () => {
+      setIsAnimating(false);
+    }
+  }, [])
 
   return (
     <div className={styles.skillScroller}>

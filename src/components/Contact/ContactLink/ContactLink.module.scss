@@ -3,6 +3,7 @@
 .contactLink{
   position: relative;
   width: 300px;
+  margin-left: 120px;
   display: grid;
   grid-template-columns: 40px 42px auto 1fr;
 
@@ -42,6 +43,7 @@
     overflow: hidden;
     width: 0;
     transition: 1s ease;
+    white-space: nowrap;
   }
   &:hover{
     .prefix{

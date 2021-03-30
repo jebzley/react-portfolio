@@ -1,9 +1,18 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styles from "./About.module.scss";
 import StackDisplay from "./StackDisplay";
 import AboutLinks from "./AboutLinks";
 
-const About = () => {
+const About = (props) => {
+  const setTitle = props.setTitle;
+
+  const updateTitle = () => {
+    setTitle("About Me");
+  };
+  useEffect(() => {
+    updateTitle();
+  }, []);
+
   return (
     <section className={styles.about}>
       <div className={styles.aboutContent}>
@@ -24,8 +33,8 @@ const About = () => {
         </div>
       </div>
       <div className={styles.stack}>
-      <h3>My toolset</h3>
-      <StackDisplay />
+        <h3>My toolset</h3>
+        <StackDisplay />
       </div>
     </section>
   );

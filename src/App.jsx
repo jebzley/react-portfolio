@@ -1,3 +1,4 @@
+import { useState } from "react";
 import TopBar from "./components/TopBar";
 import Landing from "./components/Landing";
 import Work from "./components/Work";
@@ -8,19 +9,29 @@ import styles from "./App.module.scss";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {
+  const [pageTitle, setPageTitle] = useState('reae');
+  
   return (
     <Router>
       <div className={styles.App}>
         <header className={styles.topBarWrapper}>
-          <TopBar />
+          <TopBar title={pageTitle}/>
         </header>
 
         <main className={styles.contentWrapper}>
           <Switch>
-            <Route path="/contact" component={Contact} />
-            <Route path="/about" component={About} />
-            <Route path="/work" component={Work} />
-            <Route path="/" exact component={Landing} />
+            <Route path="/contact">
+              <Contact setTitle={setPageTitle}/>
+            </Route>
+            <Route path="/about">
+              <About setTitle={setPageTitle}/>
+            </Route>
+            <Route path="/work">
+              <Work setTitle={setPageTitle}/>
+            </Route>
+            <Route path="/">
+              <Landing setTitle={setPageTitle}/>
+            </Route>
           </Switch>
         </main>
       </div>
