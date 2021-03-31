@@ -2,7 +2,6 @@
 
 .App {
   height: 100vh;
-  width: 100vw;
   display: grid;
   grid-template-rows: 55px auto;
 }
@@ -19,5 +18,9 @@
     top: 0;
     width: 100vw;
     position: fixed;
+  }
+  .App {
+    display: grid;
+    grid-template-rows: 55px auto;
   }
 }

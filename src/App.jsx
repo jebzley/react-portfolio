@@ -8,28 +8,28 @@ import styles from "./App.module.scss";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {
-  const [pageTitle, setPageTitle] = useState('reae');
-  
+  const [pageTitle, setPageTitle] = useState("reae");
+
   return (
     <Router>
       <div className={styles.App}>
         <header className={styles.topBarWrapper}>
-          <TopBar title={pageTitle}/>
+          <TopBar title={pageTitle} />
         </header>
 
         <main className={styles.contentWrapper}>
           <Switch>
             <Route path="/contact">
-              <Contact setTitle={setPageTitle}/>
+              <Contact setTitle={setPageTitle} />
             </Route>
             <Route path="/about">
-              <About setTitle={setPageTitle}/>
+              <About setTitle={setPageTitle} />
             </Route>
             <Route path="/work">
-              <Work setTitle={setPageTitle}/>
+              <Work setTitle={setPageTitle} />
             </Route>
             <Route path="/">
-              <Landing setTitle={setPageTitle}/>
+              <Landing setTitle={setPageTitle} />
             </Route>
           </Switch>
         </main>

@@ -25,6 +25,7 @@ form {
     height: 40px;
     padding: 10px;
     margin-bottom: 20px;
+   
   }
   textarea {
     @include border-with-shadow;
@@ -35,6 +36,11 @@ form {
   }
   button{
     margin: auto;
+  }
+  &:valid{
+    button{
+      background-color: rgba($color: #9cd191, $alpha: 1.0);
+    }
   }
 }
 

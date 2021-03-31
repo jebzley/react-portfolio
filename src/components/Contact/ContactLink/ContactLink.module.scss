@@ -55,5 +55,15 @@
     }
 
   }
+  &:active{
+    .prefix{
+      width: 100%;
+    }
+    .suffix{
+      overflow: hidden;
+      width: 100%;
+    }
+
+  }
 }
 

@@ -1,32 +1,28 @@
 import React, { useEffect } from "react";
 import styles from "./Contact.module.scss";
 import ContactLink from "./ContactLink";
-import emailjs, { init } from 'emailjs-com';
+import emailjs, { init } from "emailjs-com";
 import { GithubLogo, LinkedinLogo, TwitterLogo, Faders } from "phosphor-react";
 
 const Contact = (props) => {
   init("user_2WN1lziEtkz8VPiA2FVOn");
   const setTitle = props.setTitle;
 
-  const updateTitle = () => {
-    setTitle("Contact Me");
-  };
   useEffect(() => {
-    updateTitle();
+    setTitle("Contact Me");
   }, []);
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(e.target)
-    emailjs.sendForm('service_htpkjgi', 'template_txv6n0k', e.target)
-  }
+    //emailjs.sendForm("service_htpkjgi", "template_txv6n0k", e.target);
+    alert(`Thanks for getting in touch, ${e.target[1].value}!`)
+  };
 
   return (
     <section className={styles.contactArea}>
       <div className={styles.contact}>
         <div className={styles.contactFormArea}>
-          <form name="contact_form" onSubmit={handleSubmit}
-          >
+          <form name="contact_form" onSubmit={handleSubmit}>
             <h3>Send me an email</h3>
             <label htmlFor="from_email">Your e-mail address</label>
             <input
