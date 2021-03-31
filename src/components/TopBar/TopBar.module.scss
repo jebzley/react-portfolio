@@ -6,6 +6,7 @@
   top: 0;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  background-color: $background-color;
 }
 .titleArea{
   grid-column: 2;
@@ -34,4 +35,18 @@
   bottom: 0;
   border-bottom: 2px solid black;
   margin: auto;
+}
+
+@media only screen and (max-width: 576px) {
+  .topBar{
+    position: fixed;
+    top: 0;
+    width: 100vw;
+  }
+  .titleArea{
+    display: none;
+  }
+  .navigation{
+    width: 100vw;
+  }
 }

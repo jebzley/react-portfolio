@@ -4,7 +4,6 @@ import Landing from "./components/Landing";
 import Work from "./components/Work";
 import About from "./components/About";
 import Contact from "./components/Contact";
-
 import styles from "./App.module.scss";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 

@@ -4,7 +4,7 @@ import styles from "./SkillScroller.module.scss";
 const SkillScroller = () => {
   const [roleCount, updateRoleCount] = useState(0);
   const [isAnimating, setIsAnimating] = useState(false);
-  const rolesToDisplay = ["software", "JavaScript", "React", "frontend", "web"];
+  const rolesToDisplay = ["JavaScript", "software" , "React", "frontend", "web"];
 
   const roleCountUpdater = () => {
     setIsAnimating(true);

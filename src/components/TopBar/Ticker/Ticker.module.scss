@@ -19,3 +19,9 @@
   text-align: left;
   overflow: hidden;
 }
+
+@media only screen and (max-width: 800px) {
+  .ticker{
+    display: none;
+  }
+}

@@ -19,7 +19,12 @@
     transform: translateY(10px);
     p{
       opacity: 1;
-    }
-      
+    }   
+  }
+  &:active{
+    transform: translateY(10px);
+    p{
+      opacity: 1;
+    }   
   }
 }

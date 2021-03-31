@@ -3,8 +3,11 @@
 .stackDisplay{
   display: flex;
   justify-content: space-evenly;
+  flex-wrap: wrap;
   align-items: center;
   height: 100px;
   width: 100%;
 }
+
+
 

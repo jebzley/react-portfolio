@@ -49,3 +49,24 @@
     }
   }
 }
+
+@media only screen and (max-width: 768px) {
+  .work{
+    grid-template-columns: 1fr;
+    padding: 0;
+    gap: 0;
+    width: 95%;
+  }
+  .job, .jobHover{
+    height: 250px;
+    transition: none;
+    margin: 0;
+    margin-bottom: 3%;
+    &:hover{
+      height: 250px;
+    }
+    &:active{
+      height: 250px;
+    }
+  }
+}

@@ -27,3 +27,15 @@
     }
   }
 }
+
+@media only screen and (max-width: 576px) {
+  .linkAndTag{
+    p{
+      display: none;
+    }
+    &:active{
+      transform: translateY(10px);
+    }
+  }
+  
+}

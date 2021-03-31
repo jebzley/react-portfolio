@@ -26,7 +26,7 @@ const Ticker = () => {
     "Grand Theft Auto: San Andreas",
     "Sopranos - Season 6",
     "nology_tech/knowaste",
-    "Apathetic"
+    "Vibey"
   ];
   return (
     <div className={styles.ticker}>

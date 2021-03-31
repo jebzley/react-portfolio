@@ -31,14 +31,14 @@ const Work = (props) => {
           onMouseLeave={removeHoverLeft}
           className={hoveredLeft ? `${styles.jobHover}` : `${styles.job}`}
         >
-          <h3>PunkAPI</h3>
+          <h3>PunkAPI Frontend</h3>
         </div>
         <div
           onMouseEnter={applyHoverLeft}
           onMouseLeave={removeHoverLeft}
           className={hoveredLeft ? `${styles.jobHover}` : `${styles.job}`}
         >
-          <h3>Minesweeper</h3>
+          <h3>Online Notes</h3>
         </div>
       </div>
 
@@ -48,7 +48,7 @@ const Work = (props) => {
           onMouseLeave={removeHoverRight}
           className={hoveredRight ? `${styles.jobHover}` : `${styles.job}`}
         >
-          <h3>Firebase Login System</h3>
+          <h3>Minesweeper</h3>
         </div>
         <div
           onMouseEnter={applyHoverRight}

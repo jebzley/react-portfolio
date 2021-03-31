@@ -33,3 +33,26 @@
 .stack{
   width: 100%;
 }
+
+@media only screen and (max-width: 992px) {
+  .about{
+    width: 100vw;
+    margin: 0;
+  }
+
+  .aboutContent{
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    width: 100%;
+    margin: 0;
+  }
+  .imageAndLinks{
+    width: 100%;
+  }
+  .imageOfMe {
+    background-color: lightgray;
+    width: 100%;
+    
+    background-size: cover;
+  }
+}

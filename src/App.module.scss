@@ -1,6 +1,6 @@
 @import "./assets/styles/styles";
 
-.App{
+.App {
   height: 100vh;
   width: 100vw;
   display: grid;
@@ -10,6 +10,14 @@
 .topBarWrapper {
   grid-row: 1;
 }
-.contentWrapper{
+.contentWrapper {
   grid-row: 2;
+}
+
+@media only screen and (max-width: 576px) {
+  .topBarWrapper {
+    top: 0;
+    width: 100vw;
+    position: fixed;
+  }
 }
