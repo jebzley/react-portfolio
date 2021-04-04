@@ -1,41 +1,38 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import styles from "./Work.module.scss";
+
 const Work = (props) => {
   const setTitle = props.setTitle;
   const [hoveredLeft, setHoveredLeft] = useState(false);
   const [hoveredRight, setHoveredRight] = useState(false);
-  const updateTitle = () => {
-    setTitle("Work");
-  };
-  useEffect(() => {
-    updateTitle();
-  }, []);
 
-  const applyHoverLeft = () => setHoveredLeft(true);
-  const removeHoverLeft = () => setHoveredLeft(false);
-  const applyHoverRight = () => setHoveredRight(true);
-  const removeHoverRight = () => setHoveredRight(false);
+  useEffect(() => {
+    setTitle("Work");
+  }, []);
 
   return (
     <section className={styles.work}>
       <div className={styles.jobColumn1}>
+        <Link to="/article">
+          <div
+            onMouseEnter={() => setHoveredLeft(true)}
+            onMouseLeave={() => setHoveredLeft(false)}
+            className={hoveredLeft ? `${styles.jobHover}` : `${styles.job}`}
+          >
+            <h3>knoWaste</h3>
+          </div>
+        </Link>
         <div
-          onMouseEnter={applyHoverLeft}
-          onMouseLeave={removeHoverLeft}
-          className={hoveredLeft ? `${styles.jobHover}` : `${styles.job}`}
-        >
-          <h3>knoWaste</h3>
-        </div>
-        <div
-          onMouseEnter={applyHoverLeft}
-          onMouseLeave={removeHoverLeft}
+          onMouseEnter={() => setHoveredLeft(true)}
+          onMouseLeave={() => setHoveredLeft(false)}
           className={hoveredLeft ? `${styles.jobHover}` : `${styles.job}`}
         >
           <h3>PunkAPI Frontend</h3>
         </div>
         <div
-          onMouseEnter={applyHoverLeft}
-          onMouseLeave={removeHoverLeft}
+          onMouseEnter={() => setHoveredLeft(true)}
+          onMouseLeave={() => setHoveredLeft(false)}
           className={hoveredLeft ? `${styles.jobHover}` : `${styles.job}`}
         >
           <h3>Online Notes</h3>
@@ -44,22 +41,22 @@ const Work = (props) => {
 
       <div className={styles.jobColumn2}>
         <div
-          onMouseEnter={applyHoverRight}
-          onMouseLeave={removeHoverRight}
+          onMouseEnter={() => setHoveredRight(true)}
+          onMouseLeave={() => setHoveredRight(false)}
           className={hoveredRight ? `${styles.jobHover}` : `${styles.job}`}
         >
           <h3>Minesweeper</h3>
         </div>
         <div
-          onMouseEnter={applyHoverRight}
-          onMouseLeave={removeHoverRight}
+          onMouseEnter={() => setHoveredRight(true)}
+          onMouseLeave={() => setHoveredRight(false)}
           className={hoveredRight ? `${styles.jobHover}` : `${styles.job}`}
         >
           <h3>Calculator</h3>
         </div>
         <div
-          onMouseEnter={applyHoverRight}
-          onMouseLeave={removeHoverRight}
+          onMouseEnter={() => setHoveredRight(true)}
+          onMouseLeave={() => setHoveredRight(false)}
           className={hoveredRight ? `${styles.jobHover}` : `${styles.job}`}
         >
           <h3>Morse Translator</h3>
