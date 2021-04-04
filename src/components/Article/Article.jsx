@@ -1,17 +1,21 @@
-import React, {useEffect} from "react";
-import styles from './Article.module.scss';
-
+import React, { useEffect } from "react";
+import styles from "./Article.module.scss";
+import MinesweeperText from "./ArticleText/MinesweeperText"
 const Article = (props) => {
-
-  useEffect(() => {
-    props.setTitle("A Job")
-  }, [])
+    useEffect(() => {
+      props.setTitle();
+    }, [])
   return (
-    <section className ={styles.article}>
-      <div>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos nobis illum blanditiis delectus? Modi obcaecati placeat quam sed sequi neque ipsa, adipisci ut accusantium. Saepe cupiditate illum animi ipsa itaque.</p>
+    <section className={styles.article}>
+      <div className={styles.articleInfo}>
+        <h2>{props.tagline}</h2>
+        <img src={props.imgSrc} />
+        <div className={styles.articleLinks}></div>
       </div>
-  </section>
+      <div className={styles.articleText}>
+        {props.text}
+      </div>
+    </section>
   );
 };
 

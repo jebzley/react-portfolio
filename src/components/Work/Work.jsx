@@ -14,22 +14,22 @@ const Work = (props) => {
   return (
     <section className={styles.work}>
       <div className={styles.jobColumn1}>
-        <Link to="/article">
-          <div
-            onMouseEnter={() => setHoveredLeft(true)}
-            onMouseLeave={() => setHoveredLeft(false)}
-            className={hoveredLeft ? `${styles.jobHover}` : `${styles.job}`}
-          >
+        <Link
+          to="/article"
+          onMouseEnter={() => setHoveredLeft(true)}
+          onMouseLeave={() => setHoveredLeft(false)}
+          className={hoveredLeft ? `${styles.jobHover}` : `${styles.job}`}
+        >
             <h3>knoWaste</h3>
-          </div>
+          
         </Link>
-        <div
+        <Link to="/article"
           onMouseEnter={() => setHoveredLeft(true)}
           onMouseLeave={() => setHoveredLeft(false)}
           className={hoveredLeft ? `${styles.jobHover}` : `${styles.job}`}
         >
           <h3>PunkAPI Frontend</h3>
-        </div>
+        </Link>
         <div
           onMouseEnter={() => setHoveredLeft(true)}
           onMouseLeave={() => setHoveredLeft(false)}
