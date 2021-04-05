@@ -7,6 +7,7 @@ import Contact from "./components/Contact";
 import Article from "./components/Article";
 import styles from "./App.module.scss";
 import MinesweeperText from "./components/Article/ArticleText/MinesweeperText";
+import MorseText from "./components/Article/ArticleText/MorseText";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {
@@ -29,6 +30,16 @@ function App() {
                   "https://raw.githubusercontent.com/jebzley/minesweeper/master/img/readme_head.png"
                 }
                 text={<MinesweeperText />}
+              />
+            </Route>
+            <Route path="/morsetranslator">
+              <Article
+                setTitle={() => setPageTitle("Morse Code Translator")}
+                tagline={"English to Morse, Morse to English"}
+                imgSrc={
+                  "https://raw.githubusercontent.com/jebzley/morse-translator/master/assets/img/readme_head.png"
+                }
+                text={<MorseText />}
               />
             </Route>
             <Route path="/contact">

@@ -23,12 +23,18 @@ const About = (props) => {
         <div className={styles.descriptionOfMe}>
           <h3>A nice chap.</h3>
           <p>
-            I got this girl and she wants me to duke her. I told her I'd come
-            scoop her around eight, she said (super). That sounds great, shorty
-            girl's a trooper. No matter what I need her to do, she be like
-            (Super). Own his own throne, the boss like King Koopa On the
-            microphone he flossed the ring (super). Average emcees is like a TV
-            blooper MF DOOM, he's like D.B. Cooper.
+            I'm a software developer from Bristol and I'm currently looking for
+            exciting projects to be a part of.
+          </p>
+          <p>
+            I'm a lover of music, animals, fitness and food. I've been playing
+            the same three videogames for the past 15 years.
+          </p>
+          <p>
+            On a technical level my skills lie in frontend, JavaScript and React
+            development. On a creative level I want to to bring out the fun,
+            personal touches and sense of community I remember in the old web
+            using modern web development philosophy.
           </p>
         </div>
       </div>

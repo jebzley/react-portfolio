@@ -16,6 +16,13 @@
   height: 100%;
 }
 
+.jobStack{
+  font-size: 1.4rem;
+  *{
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+}
 
 .job{
   width: 100%;
@@ -27,8 +34,11 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  transition: height 0.3s ease;
- 
+  transition: 0.3s ease;
+  h3, .jobStack{
+    opacity: 0;
+    height: 0;
+  }
 }
 
 .jobHover{
@@ -41,15 +51,30 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  transition: height 0.3s ease;
+  transition: 0.3s ease;
+  h3, .jobStack{
+    opacity: 0;
+    color: white;
+  }
+  
   &:hover{
     height: 200%;
-    p{
-      font-size: 1rem;
+    background-color: rgba(0, 0, 0, 0.5); // Tint color
+    background-blend-mode: multiply;
+    h3, .jobStack{
+      opacity: 1;
     }
   }
 }
+.minesweeper{
+  background-image: url("../../assets/img/minesweeper.png");
+  background-size: cover;
+}
 
+.morseTranslator{
+  background-image: url("../../assets/img/morsetranslator.png");
+  background-size: cover;
+}
 @media only screen and (max-width: 768px) {
   .work{
     grid-template-columns: 1fr;

@@ -8,7 +8,7 @@ import { workingOn } from "../../../services/github.service.js";
 const Ticker = () => {
   const [game, setGame] = useState("");
   const [song, setSong] = useState("");
-  const [project, setProject] = useState("")
+  const [project, setProject] = useState("");
 
   const [tickerNum, setTickerNum] = useState(0);
 
@@ -23,16 +23,15 @@ const Ticker = () => {
   }, [tickerNum]);
 
   useEffect(() => {
-    listeningTo.then(response => {
-      setSong(`${response.artists[0].name} - ${response.songName}`)
-    })
-    currentlyPlaying.then(response => {
+    listeningTo.then((response) => {
+      setSong(`${response.artists[0].name} - ${response.songName}`);
+    });
+    currentlyPlaying.then((response) => {
       setGame(response);
-    })
-    workingOn.then(response => {
-      setProject(response[0].repo.name)
-    })
-    
+    });
+    workingOn.then((response) => {
+      setProject(response[0].repo.name);
+    });
   }, []);
 
   const tickerEmoji = ["🤘", "🎮", "📺", "👔", "😪"];
@@ -43,13 +42,8 @@ const Ticker = () => {
     "Working On",
     "Feeling",
   ];
-  const tickerItems = [
-    song,
-    game,
-    "Sopranos - Season 6",
-    project,
-    "Vibey",
-  ];
+  
+  const tickerItems = [song, game, "Sopranos - Season 6", project, "Vibey"];
   return (
     <div className={styles.ticker}>
       <p className={styles.tickerEmoji}>{tickerEmoji[tickerNum]}</p>
